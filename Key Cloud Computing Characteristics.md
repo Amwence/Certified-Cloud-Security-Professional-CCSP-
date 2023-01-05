@@ -20,4 +20,10 @@ Securing cloud services can be improved by including improved password requireme
 
 ## Multitenancy
 
-One way to get the improved efficiencies of cloud computing is through the sharing of infrastructure. A server may have more than one company purchasing access to its resources. These resources are shared by the tenants. Like an apartment building, these tenants share resources and services but have their own dedicated space. Virtualization allows the appearance of single tenancy in a m
+One way to get the improved efficiencies of cloud computing is through the sharing of infrastructure. A server may have more than one company purchasing access to its resources. These resources are shared by the tenants. Like an apartment building, these tenants share resources and services but have their own dedicated space. Virtualization allows the appearance of single tenancy in a multitenancy situation. Each tenant's data remains private and secure in the same way that your belongings (data) in an apartment building remain secure and isolated from the belongings (data) of your neighbor. 
+
+However as resources are shared, it is still the responsability of each tenant to exercise care to maintain the integrity and confidentiality of their own data. It is also necessary to consider the availability of your data as the actions of another tenant could make your data inaccessible for a time due to no fault of your own. 
+
+## Rapid Elasticity and Scalability
+
+In a tradional computing model, a company would need to buy the infrastructure needed for any future, potential, or anticipated growth. If they estimate poorly, they either will have a lot of excess capacity or will run out of room. Neither situation is optimal. In a cloud solution, the space needed grows and shrinks as necessary to support the customer. If there is apeak in usage or resource needs, the service grows to meet those needs. 
