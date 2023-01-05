@@ -15,6 +15,7 @@ For example, if you purchase cloud storage service, its your responsibility to k
 ## Hybrid Cloud
 
 Uses a combination of public and private cloud computing. May use the public cloud for some things, but also operate a private cloud for different workloads often because of data sensitivity concerns.  
+
 ## Multi-Cloud
 
 Combines Resources from two different public cloud vendors. This approach allows organizations to take advantage of service and price differences, but comes at the cost of added complexity. 
