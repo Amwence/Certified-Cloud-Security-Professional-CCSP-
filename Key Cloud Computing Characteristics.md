@@ -27,3 +27,12 @@ However as resources are shared, it is still the responsability of each tenant t
 ## Rapid Elasticity and Scalability
 
 In a tradional computing model, a company would need to buy the infrastructure needed for any future, potential, or anticipated growth. If they estimate poorly, they either will have a lot of excess capacity or will run out of room. Neither situation is optimal. In a cloud solution, the space needed grows and shrinks as necessary to support the customer. If there is apeak in usage or resource needs, the service grows to meet those needs. 
+
+## Resource Pooling
+
+In many ways this is the core of cloud computing. Mulitple customers share a set of resources including servers, storage, applications service, etc. They do not each have to buy the infrastructure necessary to provide their IT needs. Instead they share these resources with eachother throught the orchestration of the CSP. Everyone pays for what they need and use. The goal is that resources are used efficiently by the group of customers. 
+
+## Measured Service
+
+Metering service usage allows a CSP to chanrge for the resources used. In a private cloud, this can allow an organization to charge each department based on their usage of the cloud. For a public cloud, it allows each customer to pay for the resources used or consumed. With a measured service, everyone pays their share of the costs. 
+

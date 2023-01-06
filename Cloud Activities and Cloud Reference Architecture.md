@@ -4,7 +4,7 @@ Cloud Architecture proveds a userful framework, but is a starting point, and sho
 
 The ISO cloud reference architecture defines cloud computing activities. 
 
-## Customer Activities
+## Customer Activities / Cloud Consumer
 
 - Use cloud services
 
