@@ -17,4 +17,7 @@ De-Identifion procdure using pseudonyms(aliases) to represent other data.
 Can result in less stringent requirements than would otherwise apply under GDPR. 
 (Use if you need the data and want to reduce exposure)
 
-# Hashing VS. Encryp
+# Hashing VS. Encryption
+
+## Hashing 
+
