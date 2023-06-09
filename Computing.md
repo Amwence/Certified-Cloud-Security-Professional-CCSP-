@@ -47,3 +47,35 @@ Just as the same source code generates the same binary, code in the IaC model re
 IaC is a key DevOps practice and is used in conjuction with ***Continuous Integration and Continuous Delivery(CI/CD)***
 
 ***Note: IaC, CI/CD, and DevOps are standard elements of deployment, change, and release in the could DevSecOps is quickly growing in popularity.
+
+# Compute
+
+How does the CSP manage Compute Capacity?
+
+The infrastructure components that deliver compute resources, such as the VMs, disk, processor, memory and network resources
+
+## Reservation
+
+A minimum resource that is guarunteed to a customer
+
+## Limits
+
+maximum utilization of compute resources by a customer (e.g. VM)
+
+Limits are allowed to change dynamically based on current conditions and consumption
+
+## Shares
+
+A weighting given to a particular VM used to calculate percentage-based access to pooled resources when ther is contention. 
+
+In cases of shortage, hosts scoring determins who gets capacity
+
+> In Every Delivery and service model: THe CSP remains responsible for the maintenance and security of the physical components of compute
+
+> The customer remains largely responsible for their data and their users
+
+Between Physical components, there can be a large array of sftware and other components
+
+> Who is responsible for each of the remaining parts varies by service and delivery model and sometimes by the CSP
+
+***THE DETAILS SHOULD BE SPELLED OUT IN THE CONTRACT!***
