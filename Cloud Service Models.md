@@ -14,6 +14,10 @@ While PaaS may be intended for use by developers, there may be some administrati
 
 Has the most control for the end user, where operating system selection, configuration, patching, software tools and applications are all controlled by the end user. 
 
+## Shared Responsibility Model
+
+![Shared Service Model](Pictures/SharedServiceModel.jpg)
+
 # Cloud Service Capabilities
 
 Capability types are another way to look at cloud service models. In this view, we look at the capapbilities provided by each model. Our three service models are SaaS, PaaS, and IaaS. Each provides a different level and type of service to the customer. The shared security responsibility differ for each type as well. 

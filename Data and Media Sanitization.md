@@ -13,7 +13,11 @@
 
 ## More Secure Data Destruction
 
-- **Crypto-Shredding** (cryptographic erasure) - Data is encrypted with a strong encryption engine. The keys used to encrypt the data are then encyrpted using a different encryption engine. Then, keys form the second round of encryption are destroyed.
+**Crypto-Shredding** (cryptographic erasure) 
+
+1. Data is encrypted with a strong encryption engine. 
+2. The keys used to encrypt the data are then encyrpted using a different encryption engine. 
+3. Then, keys form the second round of encryption are destroyed.
 
     - Pro: Data cannot be recovered from any remnants. 
     - Con: High CPU and performance overhead
