@@ -25,3 +25,17 @@ Customer is responsible for:
 - Configuring secure access, whether private or public. (Identity access control and Access managment. e.g. who has access to what files, can they be changed, and some form of auditing)
 
 > In the cloud, the customer loses some control of the physical medium  where data is stored but retains responsibility for data security, and privacy. 
+
+## Customer Challenges and respnosibilities without control of the physical medium
+
+Inability to securely wipe physical storage and possibility of another tenant being allocated the same previously allocated storage space.
+
+> Customer retains responsibility for secure deletion
+
+**Compensating controls** for the lack of physical control of the storage medium include: 
+
+- Only storing data in an encryption format
+
+- Retaining control of the keys needed to decrypt the data
+
+(Together, these permit crypto-shredding when data is no longer needed, rendering any recoverable framents useless)
