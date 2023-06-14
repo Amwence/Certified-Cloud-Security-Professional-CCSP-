@@ -4,4 +4,10 @@ Connectivity to data center locations from more than one internet service provid
 
 Using multiple vendors is a proactive way for CSPs to mitigate the risk of losing network connectivity
 
-Best practice for CSPs or Data
+Best practice for CSPs or Datacenters is dual-entry, dual-provider for high availability:
+
+Two providers entering the building from separate locations
+
+Cloud customers should consider multiple paths for communicating with their cloud vendor. 
+
+(PROTECTS AVAILABILITY)
