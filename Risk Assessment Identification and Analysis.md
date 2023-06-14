@@ -73,5 +73,108 @@ CSP operations should also be considered but most major CSPs are audited for ISO
 
 Risks with cloud solutions are mainly associated with data privacy and information security:
 
-**Authentication Risk** Does the CSP provide a solution or is this a customer responsibility?
+**Authentication Risk** Does the CSP provide a solution or is this a customer responsibility?(Customer-managed or CSP-managed?)
 
+**Data Security** How a vendor encrypts data at rest, strength of the cryptography, and access controls that prevent unauthorized access by cloud service personnel or other tenants. (Some controls may be on by default, and some the customer may have to enable)
+
+**Supply Chain Risk Management (SCRM)** Evaluation of vendor security policies and processes. 
+
+Most CSPs do not allow direct auditing of their operations, due to the number of customers they support.  
+
+Instead, they provide standardized reports and assurance material regarding their security practices, such as 
+
+- SOC 2 report
+- ISO 27001 certification
+- Specialized reports for regulated data
+
+# Common Cloud Risks
+
+One risk that has been discussed is the organization losing ownership and full control over system hardware assets.
+
+Careful selection of CSPs and the development of SLAs and other contractual agreements are critical to limiting risk
+
+Organizations can balance cost savings with risk by building a system on top of IaaS or PaaS, rather than utilizing a SaaS solution.(Remember: ther service model affects the level of control)
+
+> Regardless of which deployment or service model is used, some risks are common to all cloud computing environments. 
+
+## Geographic Dispersion of the CSP data centers
+
+If the cloud service provider is properly architected, a disruption at one data center should not cause a complete outagae (Customers must verify the resilience and continuity controls in place at the CSP)
+
+## Downtime
+Resilience for network disruptions can be built in multiple ways, such as mutlivendor connectivity, zones and regions.
+
+## Compliance
+Privacy data in some jurisdictions cannot be transferred to other countries, so data dispersion is inappropriate.(Major CSPs have compliance-focused service offerings)
+
+## General Technology Risk
+
+Cloud systems are not immune to standard security issues like cyberattacks. (CSP defenses should be documented and tested, and customers aware of their configuration responsibilities)
+
+# Risk Types
+
+## External
+
+Different threat actors, ranging from competitors and script kiddies to criminal syndicates and state actors. 
+
+Capabilities depend on tools, experience, and funding.
+
+Other external environmental threats, such as fire and floods, and man-made threats, such as the accidental deletion of data or users.
+
+## Internal
+
+A malicious insider, a threat actor who may be a dissatisfied employee (someone overlooked for a promotion).
+
+Another internal threat is human error, which is when data is accidentally deleted. 
+
+> CSPs also face these risks. Customers should verify their CSP has addressed them or provided tools to help customers address it. (Customer should know who is responsible for configuration)
+
+# Cloud Specific Risks
+
+The cloud security alliance details the top cloud-specific security threats in their list titled "THE CSA EGREGIOUS 11"
+
+1. Data breaches
+    - Loss of sensitive data (PII, PHI, IP intellectual property) due to a security breach
+    - Unintentional loss/oversharing is a "data leak"
+
+2. Misconfiguration and inadequate change control
+    - Software can offer the most secure configuration options, but if it is not properly set up, then the resulting system will have security issues
+    - Remediate this risk through change and configuration management
+
+3. Lack of cloud security architecture and strategy
+    - As organizations migrate to the cloud, some overlook security, or fail to consider their obligations in the shared responsibility model
+
+4. Insufficient identity, credential access and key management
+    - The public cloud offers benefits over legacy on-premises environments but can also bring additional complexities.
+    - Well architected identity and access management (IAM), encryption, secret and key managment are different than on-prem and essential
+
+5. Account hijacking
+    - Credential theft, abuse, and/or elevation to carry out an attack. 
+    - Phishing is the most common approach
+
+6. Insider threat
+    - Disgruntled employees, employee mistakes, and unintentional oversharing
+    - Job rotation, privileged access management, auditing, security training
+
+7. Insecure interfaces and APIs
+    - Customers failing to secure access to systems gated by APIs, web consoles, etc.
+    - Controls include MFA, RBAC, and key-based API access
+
+8. Weak control plane
+    - Weakness in the elements of a cloud system that enable cloud environment configuration and management (Web console, CLS, and APIs)
+    - Most CSPs offer reference architectures to ensure customers secure and isolate their dev/test/prod environments and data
+
+9. "Metastructure" and "Applistructure" failures
+    - Vulnerabilites in the operational capabilities that CSPs make available, like APIs for accessing various cloud services
+    - If the CSP has inadequately secured these interfaces, any resulting solutions built on top of thos services will inherit these weaknesses
+    - **Metastructure** - the protocols and mechanisms that provide the interface betweenn the cloud layers, enabling managment and configuration.
+    - **Applistructure** - Applications deployed in the cloud and the underlying application services used to build them. (e.g. PaaS feature like message queues, functions, and message services)
+    - Mitigating risks in this area is the responsibility of the CSP. Customer should verify the CSP has implmented thier own SSDLC to ensure service security
+
+10. Limited cloud usage visibility
+    - Refers to when organizations experience significant reduction in visibility over their information technology stack
+    - This is because in some models the CSP own the stack!
+
+11. Abuse and nefarious use of cloud services 
+    - While the low cost and high scale of compute in the cloud is an advantage to enterprises, it is an opportunity for attackers to execute disruptive attacks at scale. 
+    - Makes executing DDoS and phishing attacks easier, so CSPs must implement mitigating security controls for these risks
