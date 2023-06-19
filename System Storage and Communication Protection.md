@@ -59,3 +59,12 @@ Deals with both ingress and egress protections, including:
 
 ## Cryptographic Key Establishment and Management
 
+Cryptography provides a number of security functions including confidentiality, integrity, and nonrepudiation
+
+***Encryption tools*** like tls or a VPN can be used to provide confidentiality
+
+***Hashing*** can be implemented to detect unintentional data modifications. (integrity)
+
+Additional security measures like ***Digital Signatures*** or hash-based message authentication code (HMAC) can be used to detect intentional tampering
+
+> HMAC can simultaneously verify both data integrity and message authenticity(nonrepudiation)
