@@ -22,6 +22,18 @@ SSDLC is fully successful only if the integration of security into an organizati
     - Once an effort has been deemed feasible user and business functionality requirements are captured. 
     - Involves user, customer and stakeholder input to determine desired functionality, current system or app functionality, and desired improvements. 
 3. Design
+    - Design functionality, architecture, integration points and techniques, data flows, and business processes.
 4. Coding
+    - Where coding (work) happens
 5. Testing
 6. Maintenance
+
+# Software Develpment Models
+
+## Agile
+
+Places emphasis on the needs of the customer and quickly developing new functionality that meets those needs in an iterative fashion.
+
+## Waterfall
+
+Describes a sequential development process that results in the development of a finished product. 
